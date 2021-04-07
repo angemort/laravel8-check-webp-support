@@ -36,10 +36,15 @@ Route::get('/test', function () {
 Quand vous vous rendrez a l'adresse http(s)://nom_de_domaine.fr/test, la fonction vous retournera "True" si votre navigateur est compatible et sinon "False".
 
 Cela vous permet de l'utiliser aussi dans vos fichiers Blade, exemple :
-```
+```html
 @webp
   <img src="/img/exemple.webp"/>
-@elsewebp
+@else
   <img src="/img/exemple.jpeg"/>
 @endwebp
 ```
+Ou encore vos class CSS : 
+```html
+<div class=" @webp img-webp @else img-png @endwebp "></div>
+```
+

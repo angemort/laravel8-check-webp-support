@@ -9,11 +9,8 @@ class LaravelWebpServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Blade::directive('webp', function() {
-            return '<?php if (supportsWebp()): ?>';
-        });
-        Blade::directive('elsewebp', function() {
-            return '<?php elseif (!supportsWebp()): ?>';
+         Blade::directive('webp', function() {
+            return '<?php if (AnalyWebp::get_client()): ?>';
         });
         Blade::directive('endwebp', function() {
             return '<?php endif; ?>';
