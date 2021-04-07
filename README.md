@@ -2,15 +2,15 @@
 - Laravel 8 -
 Ajouter une fonction simple qui vérifie si l'USER_AGENT et l'HTTP_ACCEPT sont compatibles avec les images WebP.
 
-1. Télécharger le dossier "Helpers".
+## 1. Télécharger le dossier "Helpers".
 
 Placer le dossier dans le "app" de votre projet.
 
-2. Télécharger le fichier "laravelWebpProvider.php".
+## 2. Télécharger le fichier "laravelWebpProvider.php".
 
 Placer le fichier dans vos Providers "app\Providers\".
 
-3. Modifier le fichier "config\app.php", ajoutez le provider.
+## 3. Modifier le fichier "config\app.php", ajoutez le provider.
 ```
 'providers' => [
   [...]
@@ -25,7 +25,7 @@ et ajoutez l'Alias :
 ],
 ```
 
-4. Utilisations
+## Utilisations
 
 Tester la réponse retournée en ajoutant une route "routes\web.php":
 ```
