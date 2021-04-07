@@ -47,5 +47,5 @@ Ou encore vos class CSS :
 ```html
 <div class=" @webp img-webp @else img-png @endwebp "></div>
 ```
-## Évolutions prochaines
+## Évolutions
 À l'aide de seulement une balise et un paramètre, vérifié si l'image existe dans le stockage et récupéré le lien .webp ou .png/.jpeg/...
