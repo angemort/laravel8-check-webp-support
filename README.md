@@ -1,0 +1,1 @@
+# laravel8-check-webp-support
