@@ -1,6 +1,6 @@
 # laravel8-check-webp-support
-- Laravel 8 -
-Ajouter une fonction simple qui vérifie si l'USER_AGENT et l'HTTP_ACCEPT sont compatibles avec les images WebP.
+- [Laravel 8](https://laravel.com/docs/8.x/) 
+Ajouter une fonction simple qui vérifie si l'USER_AGENT et l'HTTP_ACCEPT sont compatibles avec les images [WebP](https://developers.google.com/speed/webp).
 
 ## 1. Télécharger le dossier "Helpers".
 
@@ -11,14 +11,14 @@ Placer le dossier dans le "app" de votre projet.
 Placer le fichier dans vos Providers "app\Providers\".
 
 ## 3. Modifier le fichier "config\app.php", ajoutez le provider.
-```
+```php
 'providers' => [
   [...]
   App\Providers\LaravelWebpServiceProvider::class,
 ],
 ```
 et ajoutez l'Alias :
-```
+```php
 'aliases' => [
   [...]
   'AnalyWebp' => App\Helpers\Analy\Webp::class,
@@ -28,7 +28,7 @@ et ajoutez l'Alias :
 ## Utilisations
 
 Tester la réponse retournée en ajoutant une route "routes\web.php":
-```
+```php
 Route::get('/test', function () {
   return dd(AnalyWebp::get_client());
 });
